@@ -1,0 +1,20 @@
+[project]
+name = "sc2-datasets-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Kaszanas", email = "34846245+Kaszanas@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "sc2-datasets",
+    "tqdm>=4.67.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.sources]
+sc2-datasets = { path = "SC2_Datasets", editable = true }
